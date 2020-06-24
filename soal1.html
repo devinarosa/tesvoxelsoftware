@@ -1,0 +1,42 @@
+<html>
+
+<head>
+    <title>No 1 dan 2</title>
+</head>
+
+<body>
+    <h2>Menghapus Nilai yang Sama</h2>
+    <p id=soal1>
+
+    </p>
+    <p id="hasil1">
+    </p>
+
+    <script type="text/javascript">
+        var oldArray = [23, 45, 67, 90, 23, 1, 6, 90, 12, 43, 90, 67];
+        var newArray = [];
+        var count = 0;
+        var found = false;
+
+        for (i = 0; i < oldArray.length; i++) {
+            // console.log(listArray);
+            for (y = 0; y < newArray.length; y++) {
+                if (oldArray[i] == newArray[y]) {
+                    found = true;
+                }
+            }
+            count++;
+            if (count == 1 && found == false) {
+                newArray.push(oldArray[i]);
+            }
+            count = 0;
+            found = false;
+        }
+        console.log(oldArray);
+        console.log(newArray);
+        document.getElementById("soal1").innerHTML = (oldArray);
+        document.getElementById("hasil1").innerHTML = (newArray);
+    </script>
+</body>
+
+</html>

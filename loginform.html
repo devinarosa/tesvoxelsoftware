@@ -1,0 +1,44 @@
+<html>
+
+<head>
+    <title>Login</title>
+    <style>
+        input[type=text] {
+            width: 50%;
+            text-align: center;
+            border: 1px solid #093a4f;
+            padding: 15px;
+            border-radius: 4px;
+            margin: 10px;
+        }
+
+        button {
+            border: none;
+            width: 50%;
+            margin: 10px;
+            color: white;
+            background-color: #093a4f;
+            padding: 25px;
+            border-radius: 6px;
+        }
+    </style>
+</head>
+
+<body>
+    <h2>Login Form</h2>
+    <input type="text" name="username" id="" placeholder="Insert Username">
+    <input type="text" name="password" id="" placeholder="Insert Password">
+    <button onclick="login()" value="login">Login</button>
+
+    <script type="text/javascript">
+        function login() {
+            if (username === "devina" && password === "devina123") {
+                alert("Bener");
+            } else {
+                alert("Salah");
+            }
+        }
+    </script>
+</body>
+
+</html>
